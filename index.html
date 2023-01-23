@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EQN-Maker!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/draggable.js" defer></script>
+    <script src="scripts/eqnMaker.js" defer></script>
+    <script src="scripts/arithmeticParser.js" defer></script>
+    <script src="scripts/seededProblems.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body onload="displayEQN()">
+    <img id="logoHeader" class="logoHeader" src="images/final_logo.png" alt="Logo">
+
+    <div id="confetti-canvas" class="gameContainer">
+        <div id="topBoard" class="board">
+            <div id="userEQN " class="table"></div>
+            <div id="resultEQN " class="endResult"></div>
+        </div>
+
+        <div class="Math ">
+            <p class="draggable operand" draggable="true">+</p>
+            <p class="draggable operand" draggable="true">-</p>
+            <p class="draggable operand" draggable="true">*</p>
+            <p class="draggable operand" draggable="true">/</p>
+            <p class="draggable operand" draggable="true">(</p>
+            <p class="draggable operand" draggable="true">)</p>
+        </div>
+        <button id="checkEQN" class="glow-on-hover" onclick="parse()"> Click here to check your answer.. </button>
+    </div>
+
+</body>
+
+</html>
